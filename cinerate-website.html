@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinerate</title>
+    <title>CineRate - Your Movie Rating Platform</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Cinerate!</h1>
-    <p>Your go-to platform for movie ratings and reviews.</p>
+    <header>
+        <h1>CineRate</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to CineRate</h2>
+            <p>Your ultimate destination for movie ratings, reviews, and discussions!</p>
+        </section>
+        <section id="movies">
+            <h2>Featured Movies</h2>
+            <div class="movie-grid">
+                <!-- Movie items will go here -->
+            </div>
+        </section>
+        <section id="reviews">
+            <h2>Rate a Movie</h2>
+            <form id="rating-form">
+                <label for="movie-title">Movie Title:</label>
+                <input type="text" id="movie-title" required>
+                <label for="rating">Rating (1-5):</label>
+                <input type="number" id="rating" min="1" max="5" required>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 CineRate - All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
